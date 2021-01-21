@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -87,13 +88,13 @@
 
         <Button
             android:id="@+id/button_datail"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Detalhes"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            app:layout_constraintEnd_toEnd="@id/rating_bar_game"
-            app:layout_constraintEnd_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="@id/text_view_game_description"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_bar_game"
+             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
