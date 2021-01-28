@@ -30,38 +30,18 @@
             app:layout_constraintTop_toBottomOf="@id/image_game"
             app:layout_constraintStart_toStartOf="parent"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:text="Resident Evil 4"/>
+            android:text="Resident Evil 4"
+            android:layout_margin="8dp"/>
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chip_group_consoles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/text_view_game_name"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp">
 
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ps2"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
-
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Xbox 360"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ps5"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
-
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PC"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
+           <!--Chips inserido via programação -->
         </com.google.android.material.chip.ChipGroup>
 
         <TextView
@@ -70,6 +50,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/chip_group_consoles"
             app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
             android:text="É o sexto jogo principal da franquia Resident Evil. ... A história de Resident Evil 4 segue o agente especial do governo dos Estados Unidos Leon S. Kennedy, que é enviado em uma missão para resgatar Ashley Graham, filha do presidente americano, que foi raptada por uma seita macabra."/>
 
         <RatingBar
@@ -84,7 +65,10 @@
             android:stepSize="0.5"
             android:scaleX="0.9"
             android:scaleY="0.9"
-            android:transformPivotX="0dp"/>
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:transformPivotX="0dp" />
 
         <Button
             android:id="@+id/button_datail"

@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.GamesFragment"
-    android:background="#2196F3">
+    android:background="#CCC4C1">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_games"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/holder_recycler_view_layout" />
+        tools:listitem="@layout/holder_game_layout" />
 
 </RelativeLayout>
