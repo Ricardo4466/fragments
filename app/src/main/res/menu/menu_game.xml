@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_new_game"
+
+        android:title="Novo Jogo"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_teste_1"
+        android:icon="@drawable/console_24"
+        android:title="Sair"/>
+    <item
+        android:id="@+id/menu_teste_2"
+        android:icon="@drawable/console_24"
+        android:title="entrar"/>
+
+</menu>
