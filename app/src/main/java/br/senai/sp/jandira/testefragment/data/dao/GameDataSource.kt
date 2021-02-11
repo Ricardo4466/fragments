@@ -39,7 +39,7 @@ class GameDataSource {
                     Console(1,"Playstation 2", "Sony", "1996-12-01"),
                     Console(2,"Xbox 360", "Microsoft", "1986-12-01")))
             )
-            games.add(Game(4,
+                games.add(Game(4,
                 "Counter Strike",
                 context.getDrawable(R.drawable.csgo)!!,
                 "Counter-Strike: Global Offensive é um jogo online desenvolvido pela Valve Corporation e pela Hidden Path Entertainment, sendo uma sequência de Counter-Strike: Source. É o quarto título principal da franquia.",

@@ -4,16 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ConsoleFragment"
-    android:background="#8BC34A">
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CONSOLE"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"
-        android:textColor="@android:color/white"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_console"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/holder_console_layout" />
 
 </RelativeLayout>

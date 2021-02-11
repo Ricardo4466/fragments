@@ -34,7 +34,8 @@ class GamesFragment : Fragment() {
 
         //Determinar a orientação a recyclerview
 
-        recyclerGames.layoutManager = LinearLayoutManager(view.context)
+//        recyclerGames.layoutManager = LinearLayoutManager(view.context)
+        recyclerGames.layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.HORIZONTAL,false)
 
         // informar para recyclerview o adapter que ela irá utilizar
 
