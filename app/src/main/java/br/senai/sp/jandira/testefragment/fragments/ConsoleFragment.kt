@@ -6,10 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import br.senai.sp.jandira.testefragment.R
-import br.senai.sp.jandira.testefragment.data.dao.GameDataSource
+import br.senai.sp.jandira.testefragment.adapter.ConsoleAdapter
+import br.senai.sp.jandira.testefragment.model.Console
+
+
+import br.senai.sp.jandira.testefragment.data.dao.ConsoleDataSource
+
+import br.senai.sp.jandira.testefragment.model.Game
 
 class ConsoleFragment : Fragment() {
+
+    private lateinit var recyclerConsole: RecyclerView
+    private val consoleAdapter = ConsoleAdapter()
+    private var consoleList = listOf<Console>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,11 +44,11 @@ class ConsoleFragment : Fragment() {
 
         // informar para recyclerview o adapter que ela irá utilizar
 
-        recyclerConsole.adapter = recyclerConsole
+        recyclerConsole.adapter = consoleAdapter
 
         // Dizer ao adapter qual é a fonte de DADOS
 
-        consoleList = ConsoleDataSource.getGames(view.context)
+        consoleList = ConsoleDataSource.getConsoles(view.context)
 
         // Atualizar a lista de josgos do adapter
 
@@ -45,6 +56,7 @@ class ConsoleFragment : Fragment() {
 
         // retornar o menu
         setHasOptionsMenu(true)
+
         return view
     }
 

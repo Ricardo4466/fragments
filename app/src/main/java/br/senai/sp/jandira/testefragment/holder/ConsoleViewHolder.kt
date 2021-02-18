@@ -13,13 +13,14 @@ class ConsoleViewHolder(itemView: View): RecyclerView.ViewHolder (itemView){
     val consoleMaker= itemView.findViewById<TextView>(R.id.text_view_console_maker)
     val consoleImage = itemView.findViewById<ImageView>(R.id.console_image)
     val releaseDate = itemView.findViewById<TextView>(R.id.console_release_date)
-
+    val consoleDescription = itemView.findViewById<TextView>(R.id.console_description)
     fun bind(console: Console){
 
         textConsoleName.text = console.consoleName
         consoleMaker.text = console.consoleMaker
         consoleImage.setImageDrawable(console.consoleImage)
         releaseDate.text = console.consoleReleaseDate
+        consoleDescription.text = console.consoleDescription
     }
 
 

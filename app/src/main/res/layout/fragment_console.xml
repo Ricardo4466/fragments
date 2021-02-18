@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ConsoleFragment"
+    android:layout_marginTop="55dp"
     >
-
 
 
     <androidx.recyclerview.widget.RecyclerView

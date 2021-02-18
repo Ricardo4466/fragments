@@ -6,14 +6,15 @@ import androidx.recyclerview.widget.RecyclerView
 import br.senai.sp.jandira.testefragment.R
 import br.senai.sp.jandira.testefragment.holder.ConsoleViewHolder
 import br.senai.sp.jandira.testefragment.holder.GameViewHolder
+import br.senai.sp.jandira.testefragment.model.Console
 import br.senai.sp.jandira.testefragment.model.Game
 
 class ConsoleAdapter: RecyclerView.Adapter<ConsoleViewHolder>() {
 
-    private var gameList = listOf<Game>()
+    private var consoleList = listOf<Console>()
 
-    fun updateGameList(list: List<Game>){
-        gameList = list
+    fun updateConsoleList(list: List<Console>){
+        consoleList = list
         notifyDataSetChanged()
     }
 
