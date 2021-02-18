@@ -31,7 +31,7 @@ class ConsoleDataSource {
                 "Playstation 4",
                 "Sony",
                 "Data de Lançamento: 15 de novembro de 2013 ",
-                "O Playstation 4 é um video game da Sony lançado em 2013. ... Enquanto o do PS4 Slim fica entre R$ 1.500 e R$ 2.000. As edições Slim e Pro têm 8GB de memória RAM GDDR5"
+                "O Playstation 4 é um video game da Sony lançado em 2013.Enquanto o do PS4 Slim fica entre R$ 1.500 e R$ 2.000. As edições Slim e Pro têm 8GB de memória RAM GDDR5"
             )
             )
             console.add(Console(4,

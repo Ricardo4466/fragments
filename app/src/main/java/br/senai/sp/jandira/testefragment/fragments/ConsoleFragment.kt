@@ -39,6 +39,7 @@ class ConsoleFragment : Fragment() {
 
         recyclerConsole = view.findViewById(R.id.recycler_view_console)
 
+        // recyclerConsole.layoutManager = LinearLayoutManager(view.context)
 
         recyclerConsole.layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.HORIZONTAL,false)
 
